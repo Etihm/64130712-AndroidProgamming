@@ -1,4 +1,5 @@
-package till.edu.vd2;
+package till.edu.vd5;
+
 import  android.view.View;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -38,19 +39,19 @@ public class MainActivity extends AppCompatActivity {
         nutTru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            XULY_TRU();
+                XULY_TRU();
             }
         });
         nutNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            XULY_NHAN();
+                XULY_NHAN();
             }
         });
         nutChia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            XULY_CHIA();
+                XULY_CHIA();
             }
         });
     }
@@ -67,13 +68,13 @@ public class MainActivity extends AppCompatActivity {
 
     void XULY_CONG(){
         // Lấy dữ liệu
-    String so1 = editTextSo1.getText().toString();
-    String so2 = editTextSo2.getText().toString();
-    float num1 = Float.parseFloat(so1);
-    float num2 = Float.parseFloat(so2);
-    float tong = num1 + num2;
-    String chuoiKQ = String.valueOf(tong);
-    editTextKQ.setText(chuoiKQ);
+        String so1 = editTextSo1.getText().toString();
+        String so2 = editTextSo2.getText().toString();
+        float num1 = Float.parseFloat(so1);
+        float num2 = Float.parseFloat(so2);
+        float tong = num1 + num2;
+        String chuoiKQ = String.valueOf(tong);
+        editTextKQ.setText(chuoiKQ);
     }
 
     void XULY_TRU(){
