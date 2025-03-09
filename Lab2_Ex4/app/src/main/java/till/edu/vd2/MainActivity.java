@@ -27,6 +27,32 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         TimDieuKhien();
+        // Gắn bộ lắng nghe sự kiện và code xử lý cho từng nút
+        View.OnClickListener boLangNgheCong = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            XULY_CONG();
+            }
+        };
+        nutCong.setOnClickListener();
+        nutTru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            XULYTRU();
+            }
+        });
+        nutNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            XULYNHAN();
+            }
+        });
+        nutChia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            XULYCHIA();
+            }
+        });
     }
     void TimDieuKhien(){
         editTextSo1 = (EditText)findViewById(R.id.edtSo1);
@@ -39,109 +65,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // Xử lý Cộng
-    public void XuLyCong(View v ){
-        //B1. Lấy dữ liệu 2 số
-        //B1.1. Tìm Edittext số 1 và số 2
+    void XULY_CONG(){
 
-
-        //B1.2 Lấy dữ liệu từ 2 điều khiển đó
-        String soThu1 = editTextSo1.getText().toString();
-        String soThu2 = editTextSo2.getText().toString();
-
-        //B1.3 Chuyển dữ liệu từ chuỗi sang số
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-
-        //B2. Tính toán
-        float Tong = soA + soB;
-
-        //B3. Hiện kết quả
-        //B3.1
-
-        //B3.2 Chuẩn bị dữ liệu xuất, biến thành dạng chuỗi
-        String chuoiKQ = String.valueOf(Tong);
-        //B3.2 Gắn kết quả lên điều khiển
-        editTextKQ.setText(chuoiKQ);
     }
 
-    // Xử lý Trừ
-    public void XuLyTru(View v ){
-        //B1. Lấy dữ liệu 2 số
-        //B1.1. Tìm Edittext số 1 và số 2
+    void XULYTRU(){
 
-
-        //B1.2 Lấy dữ liệu từ 2 điều khiển đó
-        String soThu1 = editTextSo1.getText().toString();
-        String soThu2 = editTextSo2.getText().toString();
-
-        //B1.3 Chuyển dữ liệu từ chuỗi sang số
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-
-        //B2. Tính toán
-        float Tong = soA - soB;
-
-        //B3. Hiện kết quả
-        //B3.1
-
-        //B3.2 Chuẩn bị dữ liệu xuất, biến thành dạng chuỗi
-        String chuoiKQ = String.valueOf(Tong);
-        //B3.2 Gắn kết quả lên điều khiển
-        editTextKQ.setText(chuoiKQ);
     }
 
-    // Xử lý Nhân
-    public void XuLyNhan(View v ){
-        //B1. Lấy dữ liệu 2 số
-        //B1.1. Tìm Edittext số 1 và số 2
+    void XULYNHAN(){
 
-
-        //B1.2 Lấy dữ liệu từ 2 điều khiển đó
-        String soThu1 = editTextSo1.getText().toString();
-        String soThu2 = editTextSo2.getText().toString();
-
-        //B1.3 Chuyển dữ liệu từ chuỗi sang số
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-
-        //B2. Tính toán
-        float Tong = soA * soB;
-
-        //B3. Hiện kết quả
-        //B3.1
-
-        //B3.2 Chuẩn bị dữ liệu xuất, biến thành dạng chuỗi
-        String chuoiKQ = String.valueOf(Tong);
-        //B3.2 Gắn kết quả lên điều khiển
-        editTextKQ.setText(chuoiKQ);
     }
-
-    // Xử lý chia
-    public void XuLyChia(View v ){
-        //B1. Lấy dữ liệu 2 số
-        //B1.1. Tìm Edittext số 1 và số 2
-
-
-        //B1.2 Lấy dữ liệu từ 2 điều khiển đó
-        String soThu1 = editTextSo1.getText().toString();
-        String soThu2 = editTextSo2.getText().toString();
-
-        //B1.3 Chuyển dữ liệu từ chuỗi sang số
-        float soA = Float.parseFloat(soThu1);
-        float soB = Float.parseFloat(soThu2);
-
-        //B2. Tính toán
-        float Tong = soA / soB;
-
-        //B3. Hiện kết quả
-        //B3.1
-
-        //B3.2 Chuẩn bị dữ liệu xuất, biến thành dạng chuỗi
-        String chuoiKQ = String.valueOf(Tong);
-        //B3.2 Gắn kết quả lên điều khiển
-        editTextKQ.setText(chuoiKQ);
-    }
+    
 
 
 
