@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                 String pass = edtPassword.getText().toString();
                 String email = edtEmaillll.getText().toString();
 
-                if(tenDN.equals("trung")&& pass.equals("123")&& email.equals("1@gmail.com"))
+                if(tenDN.equals("hoai")&& pass.equals("4317")&& email.equals("4317@gmail.com"))
                 {
                     Intent iQuiz = new Intent(LoginActivity.this, HomeActivity.class);
                     iQuiz.putExtra("ten_dn", tenDN); //gửi dữ liệu vào iQuiz
