@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
         btnCau1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iCau1 = new Intent(MainActivity.this, Cau1Activity.class);
+                Intent iCau1 = new Intent(MainActivity.this, Cn1Activity.class);
                 startActivity(iCau1);
             }
         });
         btnCau2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iCau2 = new Intent(MainActivity.this, Cau2Activity.class);
+                Intent iCau2 = new Intent(MainActivity.this, CActivity.class);
                 startActivity(iCau2);
             }
         });

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLand"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo50nam"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/btnCau1"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:text="Chức năng 2"
+            android:background="@drawable/button_background"/>
+        <Button
+            android:id="@+id/btnCau2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:text="Chức năng 3"
+            android:background="@drawable/button_background"/>
+        <Button
+            android:id="@+id/btnCau3"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:text="Chức năng 4"
+            android:background="@drawable/button_background"/>
+        <Button
+            android:id="@+id/btnCau4"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold"
+            android:text="About me"
+            android:background="@drawable/button_background"/>
+    </GridLayout>
+
+
+</LinearLayout>

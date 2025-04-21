@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal|center_vertical"
-    android:background="@color/blue"
+    android:background="@color/white"
     tools:context=".Cau2Activity">
 
     <TextView
